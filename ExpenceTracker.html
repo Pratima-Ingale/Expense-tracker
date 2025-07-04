@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPENSE TRACKER</title>
+    <link rel="stylesheet" href="ExpenceTracker.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <p id="heading">EXPENSE TRACKER</p>
+    <div class="BasicBox">
+        <h1>Add New Expense</h1>
+        <h3>Description</h3>
+        <input type="text" id="description">
+        <h3>Amount (💰)</h3>
+        <input type="number" id="amount">
+        <h3>Category</h3>
+        <h4>( Select a Category )</h4>
+        <div class="category_container" >
+           <div class="category" id="food"> 
+              <i class="fa-solid fa-utensils"></i>
+              <h4>Food</h4>
+           </div>
+           <div class="category" id="transport">
+              <i class="fa-solid fa-car-side"></i>
+              <h4>Transport</h4>
+           </div>
+           <div class="category" id="grocery">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <h4>Grocery</h4>
+           </div>
+           <div class="category" id="education">
+              <i class="fa-solid fa-user-graduate"></i>
+              <h4>Education</h4>
+           </div>
+           <div class="category" id="trip">
+              <i class="fa-solid fa-location-dot"></i>
+              <h4>Trip</h4>
+           </div>
+           <div class="category" id="entertainment">
+              <i class="fa-solid fa-video"></i>
+              <h4>Entertainment</h4>
+           </div>
+        </div>
+        <br>
+        <h3>Date</h3>
+        <input type="date">
+        <br><br>
+        <button id="submit">ADD EXPENSE</button>
+        <br>
+        <br>
+    </div>
+    <br>
+    <div id="ExpenseInfo">
+      <div class="ExpenseSummary">
+          <h2 id="title">EXPENSE SUMMARY</h2>
+          <div id="GraphInfo">
+             <h3> Total Expense </h3>
+             <h3 style="color: blue;"> $ 0.00</h3>
+          </div>
+          <canvas id="ExpenseChart"></canvas>
+      </div>
+      <div class="RecentExpense">
+         <h2 id="title">RECENT EXPENSE</h2>
+         <div id="expenseList">
+            <h5>No Expense Added</h5>
+         </div>
+      </div>
+    </div>
+    <div class="CategoryGraph">
+        <h2>Expense by Category</h2>
+        <canvas id="categoryChart"></canvas>
+    </div>
+    <br>
+    <button id="clearAll">CLEAR ALL EXPENSES</button>
+    <br>
+    <script src="ExpenceTracker.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
