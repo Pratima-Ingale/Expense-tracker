@@ -1,0 +1,95 @@
+.BasicBox {
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 40%;
+    text-align: center;
+    place-items: center ;
+    background-color: rgb(243, 243, 136) ;
+    box-shadow: 14px 14px 14px rgb(116, 34, 116);
+}
+.category_container {
+    display: flex;
+    align-items: center ;
+    gap: 40px ;
+}
+body{
+    padding: 0 px;
+    margin: 0px ;
+    place-items: center ;
+    background-color: rgb(201, 178, 222);
+}
+#heading {
+    margin: 30px;
+    font-size: 50px;
+    font-family: cursive;
+    color: rgb(34, 4, 62);
+}
+.category{
+    border : 2px solid rgb(75, 37, 172) ;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+.category:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    background-color: rgb(67, 61, 119);
+}
+i{
+    font-size: 30px;
+    margin-top: 10px;
+}
+#submit{
+    background-color: rgb(91, 62, 11);
+    padding: 15px 15px ;
+    color: aliceblue;
+    font-size: 15px;
+    font-family: cursive;
+    box-shadow: 5px 5px 14px rgb(6, 6, 1);
+}
+#ExpenseInfo{
+    display: flex;
+}
+#GraphInfo{
+    padding-left: 15px;
+    display: flex;
+    gap: 250px;
+}
+.ExpenseSummary{
+    box-shadow: 4px 4px 14px rgb(65, 18, 74);
+    border-radius: 10px;
+    margin: 50px;
+    padding: 5px;
+    width: 30rem;
+    text-align: center;
+}
+.RecentExpense{
+    box-shadow: 4px 4px 14px rgb(65, 18, 74);
+    border-radius: 10px;
+    margin: 50px;
+    padding: 5px;
+    width: 30rem;
+    text-align: center;
+}
+#description{
+    box-shadow: 4px 4px 14px rgb(68, 74, 18);
+}
+#amount{
+    box-shadow: 4px 4px 14px rgb(68, 74, 18);
+}
+.category.selected {
+    border: 2px solid blue;
+    background-color: #eef;
+}
+#clearAll{
+    background-color: rgb(49, 16, 79);
+    color: #eef;
+    font-size: 20px;
+    padding: 10px;
+    margin: 15px;
+}
+canvas {
+    width: 100% ;
+    height: auto ;
+}
