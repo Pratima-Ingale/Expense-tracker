@@ -16,6 +16,7 @@ body{
     padding: 0 px;
     margin: 0px ;
     place-items: center ;
+    text-align: center;
     background-color: rgb(201, 178, 222);
 }
 #heading {
