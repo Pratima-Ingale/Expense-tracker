@@ -23,6 +23,7 @@ body{
     font-size: 50px;
     font-family: cursive;
     color: rgb(34, 4, 62);
+    text-shadow: 4px 4px 2px rgb(226, 232, 48);
 }
 .category{
     border : 2px solid rgb(75, 37, 172) ;
