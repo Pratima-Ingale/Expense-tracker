@@ -91,7 +91,7 @@ i{
     padding: 10px;
     margin: 15px;
 }
-canvas {
-    width: 100% ;
-    height: auto ;
+#categoryChart{
+    width: 600px ;
+    height: 600px ;
 }
